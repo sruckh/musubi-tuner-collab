@@ -41,6 +41,29 @@ Train a LoRA for **Wan2.1** (T2V 1.3B / 14B, I2V) or **HunyuanVideo**.
 
 ---
 
+### Convert LoRA Format
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sruckh/musubi-tuner-collab/blob/main/Convert/convert_lora_colab.ipynb)
+
+Convert `.safetensors` LoRA files between **musubi-tuner** and **ComfyUI / Diffusers** formats.
+
+| Direction | When to use |
+|---|---|
+| musubi-tuner → ComfyUI/Diffusers | Use your trained LoRA in ComfyUI |
+| ComfyUI/Diffusers → musubi-tuner | Import an external LoRA for further training |
+
+Supports LoRA, LoHa, and LoKr. No GPU required — CPU runtime works fine.
+
+```
+Convert/
+├── Input/    ← drop your .safetensors file(s) here
+└── Output/   ← converted files appear here
+```
+
+Also includes `Convert/convert_lora.sh` for local (non-Colab) use.
+
+---
+
 ## Quick Start
 
 1. Click an **Open in Colab** badge above
